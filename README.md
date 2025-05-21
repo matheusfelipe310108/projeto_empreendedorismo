@@ -3,109 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Universo Geek Food</title>
+  <title>Level Up Lanches</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
     }
 
     body {
-      background: #f5f6fa;
-      color: #2f3640;
+      background: linear-gradient(to right, #1e272e, #2d3436);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
     }
 
     header {
-      background: #6c5ce7;
-      color: white;
-      padding: 20px;
+      background: #ff4757;
+      padding: 30px 20px;
       text-align: center;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.5rem;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     nav {
-      background: #a29bfe;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 10px 0;
+      gap: 40px;
+      background: #2f3542;
+      padding: 15px;
     }
 
     nav a {
-      color: white;
       text-decoration: none;
-      font-weight: bold;
+      color: #fffa65;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #70a1ff;
     }
 
     .container {
-      max-width: 1100px;
-      margin: 30px auto;
+      max-width: 1200px;
+      margin: 40px auto;
       padding: 20px;
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #fffa65;
     }
 
     .cardapio {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
     }
 
     .item {
-      background: white;
+      background: #57606f;
       border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       padding: 20px;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       transition: 0.3s;
     }
 
     .item:hover {
-      transform: translateY(-5px);
+      transform: scale(1.05);
     }
 
     .item img {
-      width: 100px;
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
       margin-bottom: 15px;
     }
 
     .item h3 {
       margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #fffa65;
+    }
+
+    .item p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
     }
 
     .item button {
-      background: #6c5ce7;
+      background: #ff4757;
       color: white;
       border: none;
-      padding: 10px 20px;
-      border-radius: 25px;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-weight: bold;
       cursor: pointer;
-      transition: 0.3s;
+      transition: background 0.3s;
     }
 
     .item button:hover {
-      background: #4834d4;
+      background: #ff6b81;
     }
 
     .recompensas {
-      background: #ffeaa7;
-      padding: 20px;
-      border-radius: 15px;
-      margin-top: 40px;
+      background: #2ed573;
+      color: #2f3542;
+      padding: 30px;
+      border-radius: 20px;
       text-align: center;
+      margin-top: 50px;
+    }
+
+    .recompensas h2 {
+      font-family: 'Press Start 2P', cursive;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .recompensas p {
+      font-size: 1rem;
     }
 
     .moedas {
-      font-size: 30px;
-      margin-top: 10px;
-      color: #fdcb6e;
+      font-size: 2rem;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🍔 Universo Geek Food 🍕</h1>
-    <p>Seu universo favorito agora tem sabor!</p>
+    🍔 LEVEL UP LANCHES 🎮
   </header>
 
   <nav>
@@ -116,32 +151,32 @@
   </nav>
 
   <div class="container">
-    <h2>🌟 Escolha seu lanche</h2>
+    <h2 class="titulo">🌟 Monte seu Combo Geek!</h2>
     <div class="cardapio">
       <div class="item">
-        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Burger Naruto">
-        <h3>Rasengan Burguer</h3>
-        <p>Hambúrguer apimentado com molho especial e queijo cheddar.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="">
+        <h3>PokéBurger</h3>
+        <p>Burger temático do Pikachu com cheddar, batata smile e molho thunder.</p>
         <button>Personalizar</button>
       </div>
       <div class="item">
-        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075898.png" alt="Pizza One Piece">
-        <h3>One Slice Pizza</h3>
-        <p>Pizza 4 queijos com massa fina e borda recheada.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046750.png" alt="">
+        <h3>Pizza Sayajin</h3>
+        <p>Pizza com queijo flamejante, borda de cebola e toque especial do Goku.</p>
         <button>Personalizar</button>
       </div>
       <div class="item">
-        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075986.png" alt="Bolo Gumball">
-        <h3>Bolo do Mundo de Gumball</h3>
-        <p>Bolo arco-íris com recheio de morango e chantilly colorido.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="">
+        <h3>Bolo Multiverso</h3>
+        <p>Bolo com camadas inspiradas em Marvel, DC e outras dimensões saborosas.</p>
         <button>Personalizar</button>
       </div>
     </div>
 
     <div class="recompensas">
-      <h2>💰 Suas Moedas Virtuais</h2>
-      <p>A cada compra, você ganha moedas que podem ser trocadas por lanches grátis!</p>
-      <div class="moedas">🪙 150 moedas</div>
+      <h2>🪙 Sistema de Recompensas</h2>
+      <p>Acumule moedas a cada pedido e troque por lanches temáticos exclusivos!</p>
+      <div class="moedas">Você tem: 220 moedas</div>
     </div>
   </div>
 
